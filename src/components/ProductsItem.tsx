@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom'
 type Props = {
     comic:Comic
 }
-
 const ProductsItem = ({comic}: Props) => {
   return (
     <div className="group cursor-pointer">

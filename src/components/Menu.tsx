@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Category } from '../types/category'
 import categoryService from '../services/category'
 import { FaCaretDown } from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
 
 
 const Menu = () => {
@@ -23,7 +24,9 @@ const Menu = () => {
     <div className="bg-neutral-800 relative font-normal">
       <ul className="flex items-center gap-3 text-white h-max container">
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+          <NavLink to={'/'}>
           <p>Trang chủ</p>
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer group">
           <p className="flex items-center gap-1">
@@ -45,31 +48,58 @@ const Menu = () => {
           </div>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
           <p>Xếp hạng</p>
+          
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
+          
           <p>Con gái</p>
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
           <p>Con trai</p>
+          
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
+          
           <p>Tìm truyện</p>
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
+          
           <p>Lịch sử</p>
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
           <p>Theo dõi</p>
+          
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
+          
           <p>Thảo luận</p>
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
+          
           <p>Fanpage</p>
+          </NavLink>
         </li>
         <li className="px-3 py-3 hover:bg-orange-300 cursor-pointer">
+        <NavLink to={'/'}>
           <p>Discord</p>
+          
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -10,7 +10,7 @@ const ComicList = () => {
     const [page, setPage] = useState(1);
     const [totalComic, setTotalComic] = useState();
     const [comic,setComic] = useState<Comic[]>([])
-    const limit = 30;
+    const limit = 10;
 
     useEffect(()=>{
         fetchComics();
@@ -31,13 +31,11 @@ const ComicList = () => {
           <ProductsItem key={index} comic={comic} />
         ))}
       </div>
-      {/* <div className="">
-        <Pagination
-          defaultCurrent={page}
-          total={totalComic}
-          defaultPageSize={limit}
-        />
-      </div> */}
+      <div className="">
+        
+         {/* <button onClick={()=>{setPage(page - 1)}}>PrevPage</button>
+         <button onClick={()=>{setPage(page + 1)}}>NextPage</button> */}
+      </div>
     </div>
   )
 }

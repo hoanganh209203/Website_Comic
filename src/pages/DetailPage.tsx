@@ -17,12 +17,11 @@ const DetailPage = (props: Props) => {
   useEffect(() => {
     // dispatch({ type: "show" });
     comicService.getDetail(_id).then((response) => {
-      setComic(response.data.data);
-      console.log(response.data);
-      
+      setComic(response.data.data);      
     //   dispatch({ type: "colse" });
     });
   }, []);
+  
   return (
     <div className="p-6 rounded-xl">
       <DetailComic key={comic?._id} comic={comic} />
